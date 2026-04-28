@@ -3,7 +3,23 @@
 **A modern, production-grade end-to-end analytics pipeline for telecommunications** — turning raw technical logs into actionable executive insights and proactive churn mitigation.
 
 ---
+## 🛠️ Tech Stack
 
+### Languages & Core
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![SQL](https://img.shields.io/badge/sql-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+
+### Data Engineering & Infastructure
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![ngrok](https://img.shields.io/badge/ngrok-001E2B?style=for-the-badge&logo=ngrok&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/sqlalchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
+
+### Data Science & Analytics
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Looker Studio](https://img.shields.io/badge/Looker%20Studio-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+
+---
 ##  Project Vision
 
 This repository showcases a **full-scale Performance & Consumer Insights platform** built specifically for the telecom industry.
