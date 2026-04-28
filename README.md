@@ -19,6 +19,10 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Looker Studio](https://img.shields.io/badge/Looker%20Studio-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 
+## 🏗️ Data Pipeline Architecture
+
+![Data Pipeline Stack](./assets/pipeline_architecture.png)
+
 ---
 ##  Project Vision
 
