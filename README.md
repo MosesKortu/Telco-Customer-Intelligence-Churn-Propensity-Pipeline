@@ -1,10 +1,10 @@
-# 📊 Telco Customer Intelligence & Churn Propensity Pipeline
+#  Telco Customer Intelligence & Churn Propensity Pipeline
 
 **A modern, production-grade end-to-end analytics pipeline for telecommunications** — turning raw technical logs into actionable executive insights and proactive churn mitigation.
 
 ---
 
-## 🎯 Project Vision
+##  Project Vision
 
 This repository showcases a **full-scale Performance & Consumer Insights platform** built specifically for the telecom industry.
 
@@ -12,7 +12,7 @@ By combining **SQL governance**, **Python machine learning**, and **executive BI
 
 ---
 
-## 🏗️ The Data Value Chain
+## The Data Value Chain
 
 The pipeline closely mirrors real-world enterprise telecom environments, with clean data flow from raw logs to C-level decision making:
 
@@ -32,7 +32,7 @@ The pipeline closely mirrors real-world enterprise telecom environments, with cl
 
 ---
 
-## 🛠️ Key Features
+##  Key Features
 
 ### 1. KPI Governance & Metric Layer (SQL)
 
@@ -51,7 +51,16 @@ Advanced machine learning module focused on **Customer Affinity Detection**:
 - Assigns a **Churn Propensity Score** (0.0 – 1.0) to every active subscriber
 - Generates a prioritized **Marketing Target List** with **Next-Best-Action** recommendations (e.g., "Immediate Outbound Call" for high-value, high-risk customers)
 
-### 3. CEO Strategic Dashboards (Looker Studio)
+### 3. 📡 Connectivity & Infrastructure: The ngrok Tunnel
+In this project, the data layer resides on a local Dockerized SQL Server, while the visualization layer is hosted in the Google Looker Studio Cloud. To bridge these environments, I implemented a secure TCP Tunneling strategy using ngrok.
+
+The Challenge: Cloud-based BI tools cannot natively access localhost or private network databases due to firewall and IP restrictions.
+
+The Solution: By initiating an ngrok tcp 1433 tunnel, I exposed the local SQL port through a secure, temporary public endpoint.
+
+The Impact: This enabled a seamless Automated Reporting Pipeline, allowing cloud dashboards to query local "Big Data" sets in real-time without requiring complex VPN or static IP configurations.
+
+### 4. CEO Strategic Dashboards (Looker Studio)
 
 Executive-ready visualizations built to serve as a **trusted business partner** to leadership:
 
@@ -75,51 +84,4 @@ telco-customer-intelligence/
 ├── requirements.txt                   # Python dependencies
 ├── docker-compose.yml                 # Docker setup for SQL Server
 └── README.md                          # This file
-
-🚀 How to Run
-Prerequisites
-
-Docker (for SQL Server)
-Python 3.9+
-
-1. Start the Database
-Bashdocker-compose up -d
-2. Install Dependencies
-Bashpip install -r requirements.txt
-3. Run Data Ingestion
-Bashpython automation/ingest_data.py
-4. Deploy KPI Metric Layer
-Execute the SQL script in your SQL Server:
-SQL-- Run sql/master_view_insights.sql
-5. Generate Churn Predictions & Target List
-Bashpython models/churn_prediction.py
-This will output a CSV file with churn scores and recommended actions for the marketing team.
-
-## Tech Stack
-
-Database: SQL Server (Dockerized)
-ETL: Python + pandas + pyodbc / SQLAlchemy
-Analytics: SQL (Window functions, CTEs, complex joins)
-Machine Learning: scikit-learn (Random Forest)
-Visualization: Looker Studio
-Orchestration: Python scripts + Docker
-
-
-## Business Impact
-
-Proactive churn mitigation through early identification of at-risk high-value customers
-Revenue protection via contract vs. at-will risk visibility
-Upsell & Migration opportunities clearly quantified (e.g., 3G → 4G)
-Executive alignment with clear, visual strategic narratives
-
-
-Built with ❤️ for Telecom Analysts, Data Scientists, and Revenue Growth teams.
-Feel free to explore, fork, or adapt this pipeline for your own telco use cases!
-
-🏷️ Keywords
-Telecom Analytics • Customer Churn Prediction • KPI Governance • SQL Metric Layer • Looker Studio • Random Forest • ARPU • Customer Lifetime Value
-textThis is now a complete, professional, and well-structured `README.md` ready for your GitHub portfolio.
-
-**Tip**:  
-You can add GitHub badges at the very top (right after the title) if you want it to look even more modern. Let me know if you'd like me to add badges for Python, SQL, Docker, scikit-learn, etc.
 
