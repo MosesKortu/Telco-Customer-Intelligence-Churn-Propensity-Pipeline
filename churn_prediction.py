@@ -16,7 +16,7 @@ from sklearn.preprocessing import LabelEncoder
 import datetime
 
 # 1. DATABASE CONNECTION
-driver_path = '/opt/homebrew/lib/libmsodbcsql.18.dylib' # Ensure this path is correct for your Mac
+driver_path = '/usr/local/lib/libmsodbcsql.18.dylib' # Updated path for Intel Mac/Homebrew
 params = urllib.parse.quote_plus(
     f"DRIVER={{{driver_path}}};"
     "SERVER=localhost,1433;"
