@@ -19,7 +19,7 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Looker Studio](https://img.shields.io/badge/Looker%20Studio-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 
-## 🏗️ Data Pipeline Architecture
+##  Data Pipeline Architecture
 
 ![Data Pipeline Stack](./assets/pipeline_architecture.png)
 
@@ -71,7 +71,7 @@ Advanced machine learning module focused on **Customer Affinity Detection**:
 - Assigns a **Churn Propensity Score** (0.0 – 1.0) to every active subscriber
 - Generates a prioritized **Marketing Target List** with **Next-Best-Action** recommendations (e.g., "Immediate Outbound Call" for high-value, high-risk customers)
 
-### 3. 📡 Connectivity & Infrastructure: The ngrok Tunnel
+### 3. Connectivity & Infrastructure: The ngrok Tunnel
 In this project, the data layer resides on a local Dockerized SQL Server, while the visualization layer is hosted in the Google Looker Studio Cloud. To bridge these environments, I implemented a secure TCP Tunneling strategy using ngrok.
 
 The Challenge: Cloud-based BI tools cannot natively access localhost or private network databases due to firewall and IP restrictions.
